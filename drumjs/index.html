@@ -2,56 +2,86 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Drums JS</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+	<meta charset='utf-8'>
+	<meta http-equiv='X-UA-Compatible'
+				content='IE=edge'>
+	<title>Drums JS</title>
+	<meta name='viewport'
+				content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet'
+				type='text/css'
+				media='screen'
+				href='style.css'>
 </head>
 
 <body>
-    <div class="keys">
-        <div data-key="65" class="key">
-            <kbd>A</kbd>
-            <span class="sound"> Kick </span>
-            <!-- https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3 -->
-        </div>
-        <div data-key="83" class="key">
-            <kbd>S</kbd>
-            <span class="sound"> Snare
-                <!-- https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3 -->
-            </span>
-        </div>
-        <div data-key="68" class="key">
-            <kbd>D</kbd>
-            <span class="sound"> Hi Hat </span>
-        </div>
-    </div>
+	<div class="keys">
+		<div data-key="65"
+				 class="key">
+			<kbd>A</kbd>
+			<span class="sound"> Kick </span>
+		</div>
+		<div data-key="83"
+				 class="key">
+			<kbd>S</kbd>
+			<span class="sound"> Snare </span>
+		</div>
+		<div data-key="68"
+				 class="key">
+			<kbd>D</kbd>
+			<span class="sound"> Clap </span>
+		</div>
+		<div data-key="74"
+				 class="key">
+			<kbd>J</kbd>
+			<span class="sound"> Hi Hat </span>
+		</div>
+		<div data-key="75"
+				 class="key">
+			<kbd>K</kbd>
+			<span class="sound"> Open HH
+			</span>
+		</div>
+		<div data-key="76"
+				 class="key">
+			<kbd>L</kbd>
+			<span class="sound"> Crash </span>
+		</div>
+	</div>
 
-    <audio data-key="65" src="https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3"></audio>
-    <audio data-key="83" src="https://s3.amazonaws.com/freecodecamp/drums/Brk_Snr.mp3"></audio>
-    <audio data-key="68" src="https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3"></audio>
+	<audio src="assets/kick.wav"
+				 data-key="65"></audio>
+	<audio src="assets/snare.wav"
+				 data-key="83"></audio>
+	<audio src="assets/clap.wav"
+				 data-key="68"></audio>
+	<audio src="assets/hihat.wav"
+				 data-key="74"></audio>
+	<audio src="assets/hihat-open.wav"
+				 data-key="75"></audio>
+	<audio src="assets/crash.wav"
+				 data-key="76"></audio>
 
-    <script>
-        function playSound(e) {
-            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
-            const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
-            if (!audio) return; // stops the function from running all together
-            audio.currentTime = 0;
-            audio.play();
-            key.classList.add('playing');
-        }
+	<script>
+		function playSound(e) {
+			const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+			const key = document.querySelector(`.key[data-key="${e.keyCode}"]`);
+			if (!audio) return; // stops the function from running all together
+			audio.currentTime = 0;
+			audio.play();
+			key.classList.add('playing');
+		}
 
-        function removeTransition(e) {
-            if (e.propertyName !== 'transform') return; // skip it if it's not a transform
-            this.classList.remove('playing');
-        }
+		function removeTransition(e) {
+			if (e.propertyName !== 'transform') return; // skip it if it's not a transform
+			this.classList.remove('playing');
+		}
 
-        const keys = document.querySelectorAll('.key');
-        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-        window.addEventListener('keydown', playSound)
+		const keys = document.querySelectorAll('.key');
+		keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+		window.addEventListener('keydown', playSound);
 
-    </script>
+	</script>
 </body>
 
 </html>
