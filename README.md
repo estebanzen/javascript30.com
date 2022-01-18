@@ -9,6 +9,8 @@ Build 30 things in 30 days with 30 tutorials
 - No Libraries
 - No Boilerplate
 
+Fork: https://github.com/estebanzen/javascript30.com
+
 ## JavaScript Drum Kit
 
 - DEMO: https://estebanzen.github.io/javascript30.com/drumjs/
