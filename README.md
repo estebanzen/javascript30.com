@@ -25,3 +25,12 @@ Fork: https://github.com/estebanzen/javascript30.com
 
 - DEMO: https://estebanzen.github.io/javascript30.com/playing-with-css-variables-and-js/
 - COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130480
+
+## Array Cardio Day 1
+
+- DEMO: https://estebanzen.github.io/javascript30.com/array-cardio-day-1/
+- COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130346
+
+## Flex Panels Image Gallery
+- DEMO: https://estebanzen.github.io/javascript30.com/flex-panels-image-gallery/
+- COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130264
