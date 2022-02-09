@@ -34,3 +34,7 @@ Fork: https://github.com/estebanzen/javascript30.com
 ## Flex Panels Image Gallery
 - DEMO: https://estebanzen.github.io/javascript30.com/flex-panels-image-gallery/
 - COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130264
+
+## Ajax Type Ahead
+- DEMO: https://estebanzen.github.io/javascript30.com/ajax-type-ahead/
+- COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130156
