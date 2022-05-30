@@ -50,3 +50,8 @@ Fork: https://github.com/estebanzen/javascript30.com
 
 - DEMO: https://estebanzen.github.io/javascript30.com/fun-with-html5-canvas/
 - COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194129962
+
+## 14 Must Know Dev Tools Tricks
+
+- DEMO: https://estebanzen.github.io/javascript30.com/14-must-know-dev-tools-tricks/
+- COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194129876
