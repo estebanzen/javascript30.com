@@ -32,9 +32,26 @@ Fork: https://github.com/estebanzen/javascript30.com
 - COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130346
 
 ## Flex Panels Image Gallery
+
 - DEMO: https://estebanzen.github.io/javascript30.com/flex-panels-image-gallery/
 - COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130264
 
 ## Ajax Type Ahead
+
 - DEMO: https://estebanzen.github.io/javascript30.com/ajax-type-ahead/
 - COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130156
+
+## Array Cardio Day 2
+
+- DEMO: https://estebanzen.github.io/javascript30.com/array-cardio-day-2/
+- COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194130101
+
+## Fun with HTML5 Canvas
+
+- DEMO: https://estebanzen.github.io/javascript30.com/fun-with-html5-canvas/
+- COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194129962
+ 
+## 14 Must Know Dev Tools Tricks
+
+- DEMO: https://estebanzen.github.io/javascript30.com/14-must-know-dev-tools-tricks/
+- COURSE: https://courses.wesbos.com/account/access/61c4a0c6a3f2756df465943a/view/194129876
