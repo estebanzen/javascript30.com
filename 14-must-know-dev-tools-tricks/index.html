@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+<meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+<title>14 Must Know Dev Tools Tricks</title>
+</head>
+
+<body>
+
+<p onclick="makeGreen()">xBREAKxDOWNx</p>
+
+<script>
+const dogs = [
+    {
+        name: 'Snickers',
+        age: 2
+    },
+    {
+        name: 'Hugo',
+        age: 8
+    }
+];
+
+function makeGreen() {
+    const p = document.querySelector('p');
+    p.style.color = '#BADA55';
+    p.style.fontSize = '50px';
+};
+
+// Clearing
+console.clear();
+
+// Regular
+console.log('Hello');;
+
+// Interpolated
+console.log('Hello I am a %s string!', '💩');;
+
+// Styled
+console.log('%c I am a some great text', 'font-size: 20px; background: red; text-shadow: 2px 2px 2px blue; color: white');;
+
+// Warning!
+console.warn('OH NOOOO');
+
+// Error!
+console.error('Shit!');
+
+// Info
+console.info('Cocodriles ear 4-3 people per year');
+
+// Testing
+console.assert(1 === 1, 'that is wrong!');
+console.assert(1 === 2, 'that is wrong!');
+
+// Wiewing DOM elements
+// console.log(p)
+// console.dir(p)
+
+// Grouping together
+dogs.forEach(dog => {
+    console.groupCollapsed(`${dog.name}`)
+    console.log(`This is ${dog.name}`);
+    console.log(`${dog.name} is ${dog.age} years old`);
+    console.log(`${dog.name} is ${dog.age * 7} dog years old`);
+    console.groupEnd()
+})
+
+// Counting
+console.count('Wes')
+console.count('Wes')
+console.count('Wes')
+console.count('Steve')
+console.count('Steve')
+console.count('Wes')
+console.count('Steve')
+console.count('Steve')
+console.count('Wes')
+console.count('Steve')
+console.count('Steve')
+console.count('Wes')
+console.count('Wes')
+
+// Timing
+console.time('fetching data');
+fetch('https://api.github.com/users/wesbos')
+    .then(data => data.json())
+    .then(data => {
+        console.timeEnd('fetching data');
+        console.log(data);
+    });
+
+console.table(dogs);
+
+</script>
+
+</body>
+
+</html>
