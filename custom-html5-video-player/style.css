@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    background: #531091;
+}
+
+video.player__video.viewer,
+.player__controls {
+    width: 600px;
+}
+
+.progress {
+    flex: 10;
+    position: relative;
+    display: flex;
+    height: 5px;
+    transition: height 0.3s;
+    background: rgb(0 0 0 / 50%);
+}
+
+.progress__filled {
+    width: 0%;
+    height: 6px;
+    background: #b9b928;
+}
